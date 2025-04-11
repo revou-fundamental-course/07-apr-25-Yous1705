@@ -1,0 +1,43 @@
+   body{
+    font-family: fantasy;
+    background-color: aliceblue;
+   }
+   .main-logo{ height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(../marsha.png);
+   }
+
+   .main-header{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+
+   }
+   
+   nav{
+    display: flex;
+    align-items: center;
+   }
+   
+   nav > a{
+    text-decoration: none;
+   }
+   
+   .banner-image {
+    height: 400px;
+
+   }
+
+   main > section {
+    height: 800px;
+
+   }
+
+  .section-content {
+    text-align: center;
+   }
+
+   footer {
+    text-align: center;
+   }
