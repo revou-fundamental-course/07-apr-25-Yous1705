@@ -1,11 +1,14 @@
    body{
-    font-family: fantasy;
-    background-color: aliceblue;
+    font-family: cursive;
+    background-color: azure;
    }
+
    .main-logo{ height: 50px;
     width: 50px;
     border-radius: 50%;
     background-image: url(../marsha.png);
+    background-size: cover;
+    background-position: center;
    }
 
    .main-header{
@@ -22,10 +25,16 @@
    
    nav > a{
     text-decoration: none;
+    color: black;
+    border: 1px solid;
+    padding: 8px;
    }
    
-   .banner-image {
+   .banner-img {
     height: 400px;
+    background-image: url(../marsha.png);
+    background-position: top;
+    background-size: contain;
 
    }
 
@@ -40,4 +49,41 @@
 
    footer {
     text-align: center;
+   }
+
+   .container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: azure;
+    
+   }
+
+   .card-profile{
+    border: 1px solid;
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    background-color: #e6fafa;
+    border-radius: 10%;
+   }
+
+   .card-profile > img {
+    align-items: center;
+    width: 300px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+   }
+
+   .card-profile > p {
+    text-align: start;
+    padding: 1px 5px 5px 10px;
+   }
+
+   .section-title > h2 {
+    text-align: center;
+
    }
