@@ -1,6 +1,7 @@
    body{
     font-family: cursive;
     background-color: azure;
+    padding-top: 50px;
    }
 
    .main-logo{ height: 50px;
@@ -16,12 +17,18 @@
     justify-content: space-between;
     text-decoration: none;
     background-color: #E3F2FD;
-    border: 1px solid;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    border: 2px solid;
+    
    }
    
    nav{
     display: flex;
     align-items: center;
+    gap: 10px;
    }
    
    nav > a{
@@ -30,6 +37,11 @@
     border: 1px solid;
     padding: 8px;
    }
+
+   nav a:hover {
+    background-color: #64B5F6;
+    color: white;
+}
    
    .banner-img {
     height: 400px;
