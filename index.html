@@ -105,12 +105,49 @@
             <header class="section-title">
                 <h2>Message</h2>
             </header>
-            <!-- Article -->
-            <article class="section-content">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus repudiandae hic ad, aut illum eos
-                    dolorem quo ex a! Sequi libero natus corrupti excepturi dolorem a, eligendi laborum porro quaerat!
-                </p>
-            </article>
+
+            <div class="container">
+                <div class="card-message">
+                    <form class="form-message">
+
+
+                        <div class="form-group"><label for="name">Nama</label>
+                            <input type="text" id="name" name="name"></div>
+
+                        <div class="form-group">
+                            <label for="Tgl-lahir">Tanggal Lahir</label>
+                            <input type="date" name="tgl-lahir" id="tgl-lahir">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Jenis Kelamin</label>
+                            <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki">
+                            <label for="laki-laki"> Laki-Laki </label>
+
+                            <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+                            <label for="perempuan"> Perempuan </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <Textarea cols="20" rows="5"></Textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit">Submit</button>
+                        </div>
+
+
+                    </form>
+                </div>
+
+                <div class="card-message">
+                    <div class="pesan">
+
+                    </div>
+                </div>
+            </div>
+
         </section>
         <hr>
     </main>

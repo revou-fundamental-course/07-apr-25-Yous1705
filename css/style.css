@@ -15,7 +15,8 @@
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-
+    background-color: #E3F2FD;
+    border: 1px solid;
    }
    
    nav{
@@ -86,4 +87,40 @@
    .section-title > h2 {
     text-align: center;
 
+   }
+
+   .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+   }
+
+   .form-group > label {
+    width: 120px;
+   }
+
+   input[type="text"],input[type="date"], textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+   }
+
+   button {
+    width: 100%;
+    padding: 10px;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+
+   button:hover {
+    background-color: #ccc;
+   }
+
+   .pesan {
+    border: 3px solid black;
+    width: 500px;
+    height: 300px;
    }
