@@ -1,138 +1,174 @@
-   body{
-    font-family: cursive;
-    background-color: azure;
-    padding-top: 50px;
-   }
+body{
+   font-family: cursive;
+   background-color: azure;
+   padding-top: 50px;
+  }
 
-   .main-logo{ height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-image: url(../marsha.png);
-    background-size: cover;
-    background-position: center;
-   }
+  .main-logo{ 
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   background-image: url(../marsha.png);
+   background-size: cover;
+   background-position: center;
+  }
 
-   .main-header{
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    background-color: #E3F2FD;
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100%;
-    border: 2px solid;
-    
-   }
-   
-   nav{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-   }
-   
-   nav > a{
-    text-decoration: none;
-    color: black;
-    border: 1px solid;
-    padding: 8px;
-   }
+  .main-header{
+   display: flex;
+   justify-content: space-between;
+   text-decoration: none;
+   background-color: #E3F2FD;
+   position: fixed;
+   top:0;
+   left: 0;
+   width: 100%;
+   border: 2px solid;
+  }
+  
+  .menu{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+  }
+  
+  .menu > a{
+   text-decoration: none;
+   color: black;
+   border: 1px solid;
+   padding: 8px;
+  }
 
-   nav a:hover {
-    background-color: #64B5F6;
-    color: white;
+  .menu a:hover {
+   background-color: #64B5F6;
+   color: white;
 }
+  
+  .banner-img {
+   height: 400px;
+   background-position: top;
+   background-size: contain;
+  }
+
+  .banner-img > img{
+     height: 400px;
+     width: 500px
+  }
+
+  main > section {
+   height: 800px;
+   padding-top: 30px;
+  }
+
+ .section-content {
+   text-align: center;
+  }
+
+  footer {
+   text-align: center;
+  }
+
+  .container {
+   display: flex;
+   justify-content: space-evenly;
+   background-color: azure;
    
-   .banner-img {
-    height: 400px;
-    background-image: url(../marsha.png);
-    background-position: top;
-    background-size: contain;
+  }
 
+  .card-profile{
+   border: 1px solid;
+   width: 400px;
+   height: 600px;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   padding-top: 10px;
+   background-color: #e6fafa;
+   border-radius: 10%;
+  }
+
+  .card-profile > img {
+   align-items: center;
+   width: 300px;
+   border-radius: 500px;
+   background-size: cover;
+   background-position: center;
+  }
+
+  .card-profile > p {
+   text-align: start;
+   padding: 1px 5px 5px 10px;
+  }
+
+  .section-title > h2 {
+   text-align: center;
+
+  }
+
+  .form-group {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+  }
+
+  .form-group > label {
+   width: 120px;
+  }
+
+  input[type="text"],input[type="date"], textarea {
+   flex: 1;
+   padding: 8px;
+   border: 1px solid black;
+   border-radius: 4px;
+  }
+
+  button {
+   width: 100%;
+   padding: 10px;
+   background-color: gainsboro;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+  }
+
+  button:hover {
+   background-color: #ccc;
+  }
+
+  .pesan {
+     border: 3px solid black;
+     width: 500px;
+     min-height: 300px;
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     padding: 20px;
+     background-color: #e6fafa;
    }
 
-   main > section {
-    height: 800px;
+   @media only screen and (max-width: 600px) {
 
-   }
+     .main-header{
+        flex-direction: column;
+        align-items: center;
+     }
+     .menu {
+        flex-direction: column;
+        width: 100%;
+      }
 
-  .section-content {
-    text-align: center;
-   }
+     .menu > a{
+        margin-top: 14px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
 
-   footer {
-    text-align: center;
-   }
+     .menu a:hover {
+        background-color: #64B5F6;
+        color: white;
+      }
+  }
 
-   .container {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: azure;
-    
-   }
-
-   .card-profile{
-    border: 1px solid;
-    width: 400px;
-    height: 600px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    background-color: #e6fafa;
-    border-radius: 10%;
-   }
-
-   .card-profile > img {
-    align-items: center;
-    width: 300px;
-    border-radius: 100%;
-    background-size: cover;
-    background-position: center;
-   }
-
-   .card-profile > p {
-    text-align: start;
-    padding: 1px 5px 5px 10px;
-   }
-
-   .section-title > h2 {
-    text-align: center;
-
-   }
-
-   .form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-   }
-
-   .form-group > label {
-    width: 120px;
-   }
-
-   input[type="text"],input[type="date"], textarea {
-    flex: 1;
-    padding: 8px;
-    border: 1px solid black;
-    border-radius: 4px;
-   }
-
-   button {
-    width: 100%;
-    padding: 10px;
-    background-color: gainsboro;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-   }
-
-   button:hover {
-    background-color: #ccc;
-   }
-
-   .pesan {
-    border: 3px solid black;
-    width: 500px;
-    height: 300px;
-   }
+   

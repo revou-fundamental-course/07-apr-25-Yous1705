@@ -15,12 +15,12 @@
         <!-- Logo -->
         <div class="main-logo"></div>
         <!-- Nav -->
-        <nav>
+        <div class="menu">
             <a href="#home-page">Home</a>
             <a href="#profile">Profile</a>
             <a href="#portofolio">Portofolio</a>
             <a href="#message">Message</a>
-        </nav>
+        </div>
 
     </header>
 
@@ -33,7 +33,13 @@
             </header>
 
             <!-- Banner Content -->
-            <div class="banner-img"></div>
+            <div class="banner-img">
+                <img class="img-slideshow" src="marsha.png" />
+                <img class="img-slideshow" src="marsha2.png" />
+                <img class="img-slideshow" src="marsha3.png" />
+                <button onclick="plusDivs(-1)">Previous</button>
+                <button onclick="plusDivs(1)">Previous</button>
+            </div>
 
             <!-- Banner Text -->
             <article class="section-content">
@@ -130,11 +136,11 @@
 
                         <div class="form-group">
                             <label for="pesan">Pesan</label>
-                            <Textarea cols="20" rows="5"></Textarea>
+                            <Textarea cols="20" rows="5" id="pesan" name="pesan"></Textarea>
                         </div>
 
                         <div class="form-group">
-                            <button type="submit">Submit</button>
+                            <button id="submit" type="submit">Kirim</button>
                         </div>
 
 
@@ -143,10 +149,21 @@
 
                 <div class="card-message">
                     <div class="pesan">
+                        <div class="form-group"><label for="name">Nama</label>:
+                            <span id="name-message" name="name-message"></span>
+                        </div>
 
+                        <div class="form-group"><label for="tgl">Tanggal Lahir</label>:
+                            <span id="tgl" name="tgl"></span>
+                        </div>
+                        <div class="form-group"><label for="gender">Jenis Kelamin</label>:
+                            <span id="gender-message" name="gender-message"></span>
+                        </div>
+                        <div class="form-group"><label for="pesan-dikirim">Pesan</label>:
+                            <span id="pesan-dikirim" name="pesan-dikirm"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
         </section>
         <hr>
@@ -160,5 +177,6 @@
     </footer>
 
 </body>
+<script src="js/script.js"></script>
 
 </html>
