@@ -8,7 +8,7 @@ body{
    height: 50px;
    width: 50px;
    border-radius: 50%;
-   background-image: url(../marsha.png);
+   background-image: url(../banner1.png);
    background-size: cover;
    background-position: center;
   }
@@ -51,7 +51,9 @@ body{
 
   .banner-img > img{
      height: 400px;
-     width: 500px
+     width: 98%;
+     padding-left: 20px;
+     padding-right: 20px;
   }
 
   main > section {
