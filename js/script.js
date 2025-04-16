@@ -42,3 +42,7 @@ function showDivs(n) {
 setInterval(() => {
     plusDivs(1);
 }, 2000)
+
+
+let NamaPengguna = prompt("Siapakah nama anda", "");
+document.getElementById("name-title").innerHTML = NamaPengguna
