@@ -173,4 +173,61 @@ body{
       }
   }
 
+  #portofolio {
+   background-color: #f0fefe;
+   padding: 40px 20px;
+   font-family: 'Poppins', sans-serif;
+ }
+ 
+ .section-title h2 {
+   text-align: center;
+   font-size: 2rem;
+   margin-bottom: 30px;
+   font-weight: 600;
+ }
+ 
+ .portofolio-container {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+   max-width: 1000px;
+   margin: auto;
+ }
+ 
+ .portofolio-image img {
+   width: 280px;
+   height: auto;
+   border-radius: 12px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .portofolio-profil {
+   max-width: 600px;
+ }
+ 
+ .portofolio-profil h3 {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+ }
+ 
+ .portofolio-profil p {
+   font-size: 1rem;
+   line-height: 1.6;
+   margin: 5px 0;
+ }
+ 
+ .portofolio-profil ul {
+   margin-top: 10px;
+   padding-left: 20px;
+   list-style: none;
+ }
+ 
+ .portofolio-profil ul li::before {
+   color: #00aaff;
+   margin-right: 8px;
+ }
+ 
+
    
