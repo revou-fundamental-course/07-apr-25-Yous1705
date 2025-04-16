@@ -12,11 +12,28 @@ document.getElementById('submit').addEventListener("click", function (event) {
     const JenisKelamin = gender ? gender.value : ''
     const Pesan = message.value
 
+    if (Nama == '') {
+        alert('Please enter your name')
+    }
+    if (Tanggal == '') {
+        alert('Please enter your Tanggal lahir')
+    }
+    if (JenisKelamin == '') {
+        alert('Please enter your Jenis Kelamin')
+    }
+    if (Pesan == '') {
+        alert('Please enter your Message')
+    } else {
+        alert('Pesan Terkirim')
+        document.getElementById('name-message').innerHTML = Nama
+        document.getElementById('tgl').innerHTML = Tanggal
+        document.getElementById('gender-message').innerHTML = JenisKelamin
+        document.getElementById('pesan-dikirim').innerHTML = Pesan
 
-    document.getElementById('name-message').innerHTML = Nama
-    document.getElementById('tgl').innerHTML = Tanggal
-    document.getElementById('gender-message').innerHTML = JenisKelamin
-    document.getElementById('pesan-dikirim').innerHTML = Pesan
+    }
+
+
+
 
 })
 var slideIndex = 1;
