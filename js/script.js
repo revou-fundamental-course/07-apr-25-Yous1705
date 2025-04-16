@@ -41,4 +41,4 @@ function showDivs(n) {
 
 setInterval(() => {
     plusDivs(1);
-}, 1000)
+}, 2000)
