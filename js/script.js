@@ -3,39 +3,29 @@ let tanggal = document.getElementById("tgl-lahir")
 let message = document.getElementById("pesan")
 
 
-document.getElementById('submit').addEventListener("click", function (event) {
+document.querySelector(".form-message").addEventListener("submit", function (event) {
+    const form = event.target;
+
+    if (!form.checkValidity()) {
+        return;
+    }
+
+
     event.preventDefault();
 
-    const Nama = nameMessage.value
-    const Tanggal = tanggal.value
-    const gender = document.querySelector('input[name="jenis-kelamin"]:checked')
-    const JenisKelamin = gender ? gender.value : ''
-    const Pesan = message.value
 
-    if (Nama == '') {
-        alert('Please enter your name')
-    }
-    if (Tanggal == '') {
-        alert('Please enter your Tanggal lahir')
-    }
-    if (JenisKelamin == '') {
-        alert('Please enter your Jenis Kelamin')
-    }
-    if (Pesan == '') {
-        alert('Please enter your Message')
-    } else {
-        alert('Pesan Terkirim')
-        document.getElementById('name-message').innerHTML = Nama
-        document.getElementById('tgl').innerHTML = Tanggal
-        document.getElementById('gender-message').innerHTML = JenisKelamin
-        document.getElementById('pesan-dikirim').innerHTML = Pesan
+    const Nama = document.getElementById("name").value;
+    const Tanggal = document.getElementById("tgl-lahir").value;
+    const gender = document.querySelector('input[name="jenis-kelamin"]:checked');
+    const JenisKelamin = gender ? gender.value : '';
+    const Pesan = document.getElementById("pesan").value;
 
-    }
-
-
-
-
+    document.getElementById("name-message").innerHTML = Nama;
+    document.getElementById("tgl").innerHTML = Tanggal;
+    document.getElementById("gender-message").innerHTML = JenisKelamin;
+    document.getElementById("pesan-dikirim").innerHTML = Pesan;
 })
+
 var slideIndex = 1;
 showDivs(slideIndex)
 
