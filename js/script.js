@@ -44,5 +44,7 @@ setInterval(() => {
 }, 2000)
 
 
-let NamaPengguna = prompt("Siapakah nama anda", "");
-document.getElementById("name-title").innerHTML = NamaPengguna
+document.addEventListener("DOMContentLoaded", function () {
+    let NamaPengguna = prompt("Siapakah nama anda", "");
+    document.getElementById("name-title").innerHTML = NamaPengguna;
+});
